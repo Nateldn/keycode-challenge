@@ -4,36 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <script src="app.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <!-- event.which -->
-    <section> 
+    <header> 
         <h1 id="intro_text">Press any key to get the JavaScript event keycode</h1>
         <h1 id="big_num"></h1>
-    </section>
+    </header>
     
-    <section onkeydown="revealKeyPressResults();" id="keypress_results">
-        <article>
-          <h2 id="key">event.key</h2>
-          <p id="event_key"></p>
-        </article>
-        <!-- <article>
-          <h2 id="location">event.location</h2>
-          <p id="event_location"></p>
-        </article> -->
-        <article>
-          <h2 id="which">event.which</h2>
-          <p id="event_which"></p>
-        </article>
-        <article>
-          <h2 id="code">event.code</h2>
-          <p id="event_code"></p>
-        </article>
-    </section>
-    <script src="app.js"></script>
+  <main>
+    <section id="keypress_results">
+      <article>
+        <h2 id="key">event.key</h2>
+        <p id="event_key"></p>
+      </article>
+      <!-- <article>
+        <h2 id="location">event.location</h2>
+        <p id="event_location"></p>
+      </article> -->
+      <article>
+        <h2 id="which">event.which</h2>
+        <p id="event_which"></p>
+      </article>
+      <article>
+        <h2 id="code">event.code</h2>
+        <p id="event_code"></p>
+      </article>
+  </section>
+  </main>
+    
+    
   </body>
 
 </html>
